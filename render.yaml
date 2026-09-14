@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: acpl-sales-assistant
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python -m src.prepare
+    startCommand: python -m src.solution
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      # Set LLM_API_KEY in the Render dashboard, never in this file.
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_API_BASE
+        value: https://api.openai.com/v1
+      - key: LLM_MODEL
+        value: gpt-4o-mini

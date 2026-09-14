@@ -1,0 +1,262 @@
+{
+  "prepared_at": "2026-09-14T17:37:51",
+  "prepare_ms": 4209.9,
+  "source_dir": "G:\\AARSH 2.0 DEVLOPER\\data-cafe-assignment\\cadra-base-template\\data\\fmcg-sales-copilot-ai-engineer-mid-4to6",
+  "rows_raw": {
+    "fact_primary_sales.csv": 74880,
+    "fact_targets.csv": 720,
+    "stockouts.csv": 520,
+    "promotions.csv": 199,
+    "dim_sku.csv": 120,
+    "dim_geo.csv": 12,
+    "dim_distributor.csv": 199
+  },
+  "rows_after_preparation": {
+    "fact_primary_sales.csv": 74880,
+    "fact_targets.csv": 720,
+    "stockouts.csv": 520,
+    "promotions.csv": 40,
+    "dim_sku.csv": 120,
+    "dim_geo.csv": 12,
+    "dim_distributor.csv": 40,
+    "action_playbook.xlsx": 8,
+    "documents/": 6
+  },
+  "derived": {
+    "facts_brand_region_month": 720,
+    "promo_uplift": 40,
+    "promo_uplift_measurable": 39,
+    "chronic_stockout_pairs": 2
+  },
+  "coverage": {
+    "weeks": 52,
+    "first_week": "2025-07-01",
+    "last_week": "2026-06-23",
+    "months": 12,
+    "brands": [
+      "Aloe Vera Glow",
+      "Aqualite",
+      "Chai Mitra",
+      "CremeDelight",
+      "Crunchos",
+      "DishBright",
+      "FreshFloor",
+      "GlucoJoy",
+      "Marigold Marie",
+      "MintGuard",
+      "Namkeen Nation",
+      "PopKing",
+      "Silkessa",
+      "SparkClean",
+      "Zing Cola"
+    ],
+    "regions": [
+      "East",
+      "North",
+      "South",
+      "West"
+    ]
+  },
+  "national_fy26_primary_sales_inr": 1357631078.74,
+  "national_fy26_target_inr": 1360880000.0,
+  "reconciliation": [
+    {
+      "source": "promotions.csv",
+      "issue": "13 unnamed columns and 159 fully-empty rows left by the Excel export",
+      "resolution": "dropped as export padding; no populated row lost",
+      "rows_affected": 159
+    },
+    {
+      "source": "dim_distributor.csv",
+      "issue": "16 unnamed columns and 159 fully-empty rows left by the Excel export",
+      "resolution": "dropped as export padding; no populated row lost",
+      "rows_affected": 159
+    },
+    {
+      "source": "promotions.csv",
+      "issue": "dates are DD/MM/YYYY with unpadded parts ('1/7/2025'); every other file is YYYY-MM-DD",
+      "resolution": "parsed day-first explicitly so 1/7/2025 reads as 1 July, not 7 January",
+      "rows_affected": 40
+    },
+    {
+      "source": "stockouts.csv",
+      "issue": "region typed free-hand: 16 distinct spellings including 'EAST', 'East', 'East Region', 'NORTH'",
+      "resolution": "case-folded and the ' Region' suffix stripped, to the 4 canonical names in dim_geo",
+      "rows_affected": 520
+    },
+    {
+      "source": "stockouts.csv x dim_distributor.csv x dim_geo.csv",
+      "issue": "the stock-out log carries its own region, which can disagree with the distributor's territory in the masters",
+      "resolution": "dim_geo via dim_distributor is authoritative; the logged region is kept only as a fallback (0 rows disagreed)",
+      "rows_affected": 0
+    },
+    {
+      "source": "fact_primary_sales.csv x fact_targets.csv",
+      "issue": "sales are weekly by SKU x territory; targets are monthly by brand x region",
+      "resolution": "sales rolled up to brand x region x month (dim_sku for brand, dim_geo for region; a week belongs to the month containing its week_start, per the data dictionary) before any comparison",
+      "rows_affected": 74880
+    },
+    {
+      "source": "stockouts.csv x dim_sku.csv",
+      "issue": "the stock-out log names the product column `item_code`; the master calls it `sku_code`",
+      "resolution": "joined as the same key; 520 of 520 rows resolve to a known SKU",
+      "rows_affected": 0
+    },
+    {
+      "source": "promotions.csv x dim_sku.csv",
+      "issue": "the promotion calendar names the product column `sku`",
+      "resolution": "joined to `sku_code`; 40 of 40 promotions resolve to a known SKU",
+      "rows_affected": 0
+    }
+  ],
+  "documents": [
+    {
+      "file": "distributor_note_west.docx",
+      "regions": [
+        "West"
+      ],
+      "brands": [
+        "Aqualite",
+        "Chai Mitra",
+        "Zing Cola"
+      ],
+      "categories": [
+        "Beverages"
+      ],
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "distributors": [
+        "D032",
+        "D033"
+      ]
+    },
+    {
+      "file": "escalation_sop.docx",
+      "regions": [],
+      "brands": [],
+      "categories": [],
+      "months": [],
+      "distributors": []
+    },
+    {
+      "file": "hr_circular.docx",
+      "regions": [],
+      "brands": [],
+      "categories": [],
+      "months": [],
+      "distributors": []
+    },
+    {
+      "file": "promo_circular_h2fy26.docx",
+      "regions": [
+        "North",
+        "West"
+      ],
+      "brands": [
+        "Aqualite",
+        "Chai Mitra",
+        "Crunchos",
+        "Namkeen Nation",
+        "PopKing",
+        "Zing Cola"
+      ],
+      "categories": [
+        "Snacks",
+        "Beverages"
+      ],
+      "months": [
+        "2025-11",
+        "2026-05",
+        "2026-06"
+      ],
+      "distributors": []
+    },
+    {
+      "file": "visit_note_north_feb2026.docx",
+      "regions": [
+        "North"
+      ],
+      "brands": [
+        "CremeDelight",
+        "GlucoJoy",
+        "Marigold Marie"
+      ],
+      "categories": [
+        "Biscuits"
+      ],
+      "months": [
+        "2026-02"
+      ],
+      "distributors": []
+    },
+    {
+      "file": "weekly_summary_w32.docx",
+      "regions": [],
+      "brands": [],
+      "categories": [],
+      "months": [],
+      "distributors": []
+    }
+  ],
+  "playbook": [
+    {
+      "rule_id": "R-01",
+      "condition": "A brand misses target in a region (achievement < 70%) AND its SKUs have repeated stock-outs there",
+      "recommendation": "Supply is the likely constraint",
+      "action": "Expedite replenishment and escalate to the regional supply lead",
+      "needs_approval": true
+    },
+    {
+      "rule_id": "R-02",
+      "condition": "A brand misses target (< 80%) while a promotion is running with weak uplift (< 10%)",
+      "recommendation": "The promotion is underperforming",
+      "action": "Review promo effectiveness with the brand team",
+      "needs_approval": false
+    },
+    {
+      "rule_id": "R-03",
+      "condition": "A brand misses target (< 80%) with NO stock-out and NO promotion in the period",
+      "recommendation": "Cause is external or unknown",
+      "action": "Commission a market-visit / competitor check for the brand in that region",
+      "needs_approval": false
+    },
+    {
+      "rule_id": "R-04",
+      "condition": "A single distributor is out of stock for more than 6 weeks on a SKU",
+      "recommendation": "Chronic replenishment gap",
+      "action": "Raise a replenishment order for that distributor",
+      "needs_approval": true
+    },
+    {
+      "rule_id": "R-05",
+      "condition": "A brand over-delivers against target in a region (achievement > 110%)",
+      "recommendation": "Something is working",
+      "action": "Capture what worked and redeploy field effort elsewhere",
+      "needs_approval": false
+    },
+    {
+      "rule_id": "R-06",
+      "condition": "A brand misses target with no stock-out, no promotion, and no supporting note",
+      "recommendation": "No cause is determinable",
+      "action": "Flag for manual review; do not auto-attribute a cause",
+      "needs_approval": false
+    },
+    {
+      "rule_id": "R-07",
+      "condition": "A promotion delivered strong uplift (> 25%)",
+      "recommendation": "The mechanic worked",
+      "action": "Consider extending or replicating the mechanic in a comparable region",
+      "needs_approval": false
+    },
+    {
+      "rule_id": "R-08",
+      "condition": "A distributor shows stock-outs across 3 or more SKUs in a month",
+      "recommendation": "Distributor-level supply issue",
+      "action": "Schedule a distributor stock-review call",
+      "needs_approval": true
+    }
+  ]
+}

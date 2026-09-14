@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+# Derived data is rebuilt by `python -m src.prepare`; the manifest is kept
+# because ARTEFACT.md cites its figures.
+build/*
+!build/manifest.json
