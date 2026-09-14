@@ -1,6 +1,6 @@
 {
   "summary": {
-    "ran_at": "2026-09-14T19:39:27",
+    "ran_at": "2026-09-14T19:46:48",
     "mode": "in-process (ASGI)",
     "llm_key_configured": false,
     "llm_model": "gpt-4o-mini",
@@ -11,16 +11,16 @@
     "answerable_accuracy_pct": 100.0,
     "refusal_accuracy_pct": 100.0,
     "ask_latency_ms": {
-      "p50": 15.4,
-      "p95": 42.4,
-      "min": 0.9,
-      "max": 1168.7
+      "p50": 27.5,
+      "p95": 133.0,
+      "min": 1.7,
+      "max": 207.9
     },
     "actions_latency_ms": {
-      "p50": 12.8,
-      "p95": 67.1,
-      "min": 0.7,
-      "max": 52.0
+      "p50": 27.5,
+      "p95": 154.1,
+      "min": 1.7,
+      "max": 117.4
     },
     "cost_usd_per_ask": {
       "median": 0.0,
@@ -39,8 +39,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 29.4,
-      "wall_latency_ms": 31.8,
+      "reported_latency_ms": 62.9,
+      "wall_latency_ms": 67.6,
       "cost_usd": 0.0,
       "answer": "GlucoJoy in South is behind plan over FY26 (Jul 2025 - Jun 2026): INR 27,466,258 against a target of INR 28,128,000, 97.6% of plan and INR 661,742 short."
     },
@@ -53,8 +53,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 34.0,
-      "wall_latency_ms": 35.2,
+      "reported_latency_ms": 60.3,
+      "wall_latency_ms": 62.5,
       "cost_usd": 0.0,
       "answer": "GlucoJoy in South is behind plan over FY26 (Jul 2025 - Jun 2026): INR 27,466,258 against a target of INR 28,128,000, 97.6% of plan and INR 661,742 short."
     },
@@ -67,8 +67,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 21.4,
-      "wall_latency_ms": 22.9,
+      "reported_latency_ms": 54.2,
+      "wall_latency_ms": 56.4,
       "cost_usd": 0.0,
       "answer": "West is behind plan over Q4 FY26 (Apr 2026 - Jun 2026): INR 56,027,608 against a target of INR 59,078,000, 94.8% of plan and INR 3,050,392 short."
     },
@@ -81,8 +81,8 @@
       "category": "national_total",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 14.3,
-      "wall_latency_ms": 16.8,
+      "reported_latency_ms": 19.9,
+      "wall_latency_ms": 22.5,
       "cost_usd": 0.0,
       "answer": "ACPL nationally recorded primary sales of INR 1,357,631,079 over FY26 (Jul 2025 - Jun 2026), against a target of INR 1,360,880,000 \u2014 99.8% of plan."
     },
@@ -95,8 +95,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 28.9,
-      "wall_latency_ms": 30.4,
+      "reported_latency_ms": 72.2,
+      "wall_latency_ms": 75.1,
       "cost_usd": 0.0,
       "answer": "CremeDelight in North is well behind plan over Feb 2026: INR 1,509,624 against a target of INR 2,097,000, 72.0% of plan and INR 587,376 short."
     },
@@ -109,8 +109,8 @@
       "category": "gap_ranking",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 11.3,
-      "wall_latency_ms": 13.2,
+      "reported_latency_ms": 20.0,
+      "wall_latency_ms": 22.2,
       "cost_usd": 0.0,
       "answer": "Over Q4 FY26 (Apr 2026 - Jun 2026) the largest shortfall against target is Aqualite in West: INR 1,912,659 short, at 62.0% of plan (INR 3,120,341 against INR 5,033,000). Next: SparkClean in South INR 390,070 short (95.3%); SparkClean in West INR 298,434 short (95.2%); Aloe Vera Glow in West INR 212,"
     },
@@ -123,8 +123,8 @@
       "category": "gap_ranking",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 1166.4,
-      "wall_latency_ms": 1168.7,
+      "reported_latency_ms": 105.1,
+      "wall_latency_ms": 111.7,
       "cost_usd": 0.0,
       "answer": "Over Q4 FY26 (Apr 2026 - Jun 2026) the largest shortfall against target is Aqualite in West: INR 1,912,659 short, at 62.0% of plan (INR 3,120,341 against INR 5,033,000). Next: SparkClean in South INR 390,070 short (95.3%); SparkClean in West INR 298,434 short (95.2%); Aloe Vera Glow in West INR 212,"
     },
@@ -137,8 +137,8 @@
       "category": "gap_ranking",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 10.0,
-      "wall_latency_ms": 11.5,
+      "reported_latency_ms": 23.7,
+      "wall_latency_ms": 25.8,
       "cost_usd": 0.0,
       "answer": "Over FY26 (Jul 2025 - Jun 2026) the largest shortfall against target is MintGuard in East: INR 604,210 short, at 96.7% of plan (INR 17,432,790 against INR 18,037,000). Next: PopKing in East INR 452,272 short (97.4%); Aloe Vera Glow in East INR 426,993 short (98.4%); SparkClean in East INR 99,542 sho"
     },
@@ -151,8 +151,8 @@
       "category": "gap_ranking",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 9.5,
-      "wall_latency_ms": 10.5,
+      "reported_latency_ms": 20.9,
+      "wall_latency_ms": 23.1,
       "cost_usd": 0.0,
       "answer": "Over FY26 (Jul 2025 - Jun 2026) the largest shortfall against target is Aqualite in West: INR 1,798,498 short, at 90.9% of plan (INR 18,027,502 against INR 19,826,000). Next: SparkClean in South INR 1,222,654 short (96.6%); CremeDelight in North INR 1,014,237 short (96.4%); DishBright in South INR 7"
     },
@@ -165,8 +165,8 @@
       "category": "top_ranking",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 8.1,
-      "wall_latency_ms": 9.2,
+      "reported_latency_ms": 20.5,
+      "wall_latency_ms": 23.4,
       "cost_usd": 0.0,
       "answer": "Over FY26 (Jul 2025 - Jun 2026) the strongest line is Zing Cola in East, at 102.6% of target (INR 17,967,883 against INR 17,508,000)."
     },
@@ -179,8 +179,8 @@
       "category": "stockouts",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 14.3,
-      "wall_latency_ms": 15.4,
+      "reported_latency_ms": 31.0,
+      "wall_latency_ms": 35.2,
       "cost_usd": 0.0,
       "answer": "West logged 125 distributor-week stock-outs over FY26 (Jul 2025 - Jun 2026), across 9 distributors and 70 SKUs (429 days of zero stock in total). The worst is D032 (Mumbai & Sons 1) with 93 days out across 13 SKUs. 2 distributor-SKU pair(s) have run past the six-week chronic threshold."
     },
@@ -193,8 +193,8 @@
       "category": "stockouts",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 14.8,
-      "wall_latency_ms": 15.9,
+      "reported_latency_ms": 29.4,
+      "wall_latency_ms": 32.7,
       "cost_usd": 0.0,
       "answer": "ACPL nationally logged 520 distributor-week stock-outs over FY26 (Jul 2025 - Jun 2026), across 40 distributors and 118 SKUs (1614 days of zero stock in total). The worst is D032 (Mumbai & Sons 1) with 93 days out across 13 SKUs. 2 distributor-SKU pair(s) have run past the six-week chronic threshold."
     },
@@ -207,8 +207,8 @@
       "category": "stockouts",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 14.5,
-      "wall_latency_ms": 15.5,
+      "reported_latency_ms": 28.8,
+      "wall_latency_ms": 32.7,
       "cost_usd": 0.0,
       "answer": "Aqualite in West logged 18 distributor-week stock-outs over FY26 (Jul 2025 - Jun 2026), across 2 distributors and 1 SKUs (101 days of zero stock in total). The worst is D032 (Mumbai & Sons 1) with 53 days out across 1 SKUs. 2 distributor-SKU pair(s) have run past the six-week chronic threshold."
     },
@@ -221,8 +221,8 @@
       "category": "promotions",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 37.0,
-      "wall_latency_ms": 38.1,
+      "reported_latency_ms": 11.2,
+      "wall_latency_ms": 14.6,
       "cost_usd": 0.0,
       "answer": "11 promotion(s) ran for West over FY26 (Jul 2025 - Jun 2026), with a median uplift of 25.0% on weekly sales against the four weeks before each. The strongest was PR-2025-058 (Price-off on FreshFloor) at 34.5%."
     },
@@ -235,8 +235,8 @@
       "category": "promotions",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 6.5,
-      "wall_latency_ms": 7.7,
+      "reported_latency_ms": 9.9,
+      "wall_latency_ms": 13.1,
       "cost_usd": 0.0,
       "answer": "40 promotion(s) ran for ACPL nationally over FY26 (Jul 2025 - Jun 2026), with a median uplift of 27.4% on weekly sales against the four weeks before each. The strongest was PR-2026-028 (Extra 20% volume on GlucoJoy) at 44.7%."
     },
@@ -249,8 +249,8 @@
       "category": "explain",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 24.4,
-      "wall_latency_ms": 25.4,
+      "reported_latency_ms": 50.1,
+      "wall_latency_ms": 52.1,
       "cost_usd": 0.0,
       "answer": "CremeDelight in North missed target over Feb 2026, reaching 72.0% of plan (INR 587,376 short). visit_note_north_feb2026.docx records: \"Impact Our CremeDelight range in the North lost roughly a quarter of its expected February offtake as a direct result of that competitor activity.\"."
     },
@@ -263,8 +263,8 @@
       "category": "explain",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 24.6,
-      "wall_latency_ms": 25.6,
+      "reported_latency_ms": 52.4,
+      "wall_latency_ms": 55.2,
       "cost_usd": 0.0,
       "answer": "Aqualite in West missed target over Q4 FY26 (Apr 2026 - Jun 2026), reaching 62.0% of plan (INR 1,912,659 short). Its SKUs were out of stock for 18 distributor-weeks (101 days of zero stock) in the same window, so supply is a live constraint; 1 promotion(s) ran, lifting weekly sales a median 21.9% ov"
     },
@@ -277,8 +277,8 @@
       "category": "explain",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 22.4,
-      "wall_latency_ms": 23.6,
+      "reported_latency_ms": 49.5,
+      "wall_latency_ms": 51.5,
       "cost_usd": 0.0,
       "answer": "MintGuard in East missed target over Mar 2026, reaching 74.0% of plan (INR 439,040 short). Nothing in the stock-out log, the promotion calendar or the working documents covers this period, so the data does not show a cause. Per the escalation SOP this is flagged for manual review rather than attribu"
     },
@@ -291,8 +291,8 @@
       "category": "actions",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 17.4,
-      "wall_latency_ms": 18.6,
+      "reported_latency_ms": 38.7,
+      "wall_latency_ms": 41.0,
       "cost_usd": 0.0,
       "answer": "3 action(s) for West over the week commencing 23 Jun 2026 (assessed over Jun 2026, the smallest window with a target), 3 of which need a manager's approval before anyone acts. R-01: Expedite replenishment and escalate to the regional supply lead (PENDING_APPROVAL); R-04: Raise a replenishment order "
     },
@@ -305,8 +305,8 @@
       "category": "actions",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 29.4,
-      "wall_latency_ms": 32.0,
+      "reported_latency_ms": 59.6,
+      "wall_latency_ms": 62.8,
       "cost_usd": 0.0,
       "answer": "11 action(s) for all over the week commencing 23 Jun 2026 (assessed over Jun 2026, the smallest window with a target), 9 of which need a manager's approval before anyone acts. R-01: Expedite replenishment and escalate to the regional supply lead (PENDING_APPROVAL); R-04: Raise a replenishment order "
     },
@@ -320,7 +320,7 @@
       "router": "rules",
       "answer_source": null,
       "reported_latency_ms": 1.5,
-      "wall_latency_ms": 2.6,
+      "wall_latency_ms": 3.3,
       "cost_usd": 0.0,
       "answer": "'Britannia' is not a brand in ACPL's product master, so I have no data for it. The FY26 brands are: Aloe Vera Glow, Aqualite, Chai Mitra, CremeDelight, Crunchos, DishBright, FreshFloor, GlucoJoy, Marigold Marie, MintGuard, Namkeen Nation, PopKing, Silkessa, SparkClean, Zing Cola."
     },
@@ -333,8 +333,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.7,
-      "wall_latency_ms": 1.9,
+      "reported_latency_ms": 1.2,
+      "wall_latency_ms": 3.2,
       "cost_usd": 0.0,
       "answer": "I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Market share, secondary sales, competitor figures, profitability, "
     },
@@ -347,8 +347,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.6,
-      "wall_latency_ms": 1.5,
+      "reported_latency_ms": 1.6,
+      "wall_latency_ms": 5.5,
       "cost_usd": 0.0,
       "answer": "'market share' is not something any ACPL source here measures. I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Mar"
     },
@@ -361,8 +361,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.6,
-      "wall_latency_ms": 1.4,
+      "reported_latency_ms": 1.3,
+      "wall_latency_ms": 3.3,
       "cost_usd": 0.0,
       "answer": "'next quarter' is not something any ACPL source here measures. I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Mar"
     },
@@ -375,8 +375,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 1.1,
-      "wall_latency_ms": 2.0,
+      "reported_latency_ms": 1.9,
+      "wall_latency_ms": 3.6,
       "cost_usd": 0.0,
       "answer": "'secondary sales' is not something any ACPL source here measures. I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. "
     },
@@ -389,8 +389,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.6,
-      "wall_latency_ms": 1.4,
+      "reported_latency_ms": 1.2,
+      "wall_latency_ms": 3.2,
       "cost_usd": 0.0,
       "answer": "'gross margin' is not something any ACPL source here measures. I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Mar"
     },
@@ -403,8 +403,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.6,
-      "wall_latency_ms": 1.3,
+      "reported_latency_ms": 2.9,
+      "wall_latency_ms": 7.0,
       "cost_usd": 0.0,
       "answer": "'sales reps' is not something any ACPL source here measures. I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Marke"
     },
@@ -417,8 +417,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.5,
-      "wall_latency_ms": 1.2,
+      "reported_latency_ms": 2.2,
+      "wall_latency_ms": 5.6,
       "cost_usd": 0.0,
       "answer": "'FY25' is not something any ACPL source here measures. I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Market shar"
     },
@@ -431,8 +431,8 @@
       "category": "explain",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 18.4,
-      "wall_latency_ms": 19.3,
+      "reported_latency_ms": 41.7,
+      "wall_latency_ms": 44.2,
       "cost_usd": 0.0,
       "answer": "That premise does not hold: Aqualite in West did not beat target over Q4 FY26 (Apr 2026 - Jun 2026). It delivered INR 3,120,341 against a target of INR 5,033,000, 62.0% of plan."
     },
@@ -445,8 +445,8 @@
       "category": "explain",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 16.6,
-      "wall_latency_ms": 17.5,
+      "reported_latency_ms": 35.7,
+      "wall_latency_ms": 37.6,
       "cost_usd": 0.0,
       "answer": "That premise does not hold: GlucoJoy was not 40% off target over FY26 (Jul 2025 - Jun 2026). It delivered INR 109,697,061 against a target of INR 110,083,000 \u2014 99.6% of plan, so 0.4% short of it."
     },
@@ -460,7 +460,7 @@
       "router": "guard",
       "answer_source": null,
       "reported_latency_ms": 0.0,
-      "wall_latency_ms": 2.0,
+      "wall_latency_ms": 1.8,
       "cost_usd": 0.0,
       "answer": "That request asks me to set aside my grounding rules or disclose how I am configured, which I will not do. Ask about ACPL's FY26 sales, stock-outs, promotions or the weekly action list and I will answer from the data."
     },
@@ -488,7 +488,7 @@
       "router": "guard",
       "answer_source": null,
       "reported_latency_ms": 0.0,
-      "wall_latency_ms": 0.9,
+      "wall_latency_ms": 1.8,
       "cost_usd": 0.0,
       "answer": "That request asks me to set aside my grounding rules or disclose how I am configured, which I will not do. Ask about ACPL's FY26 sales, stock-outs, promotions or the weekly action list and I will answer from the data."
     },
@@ -501,8 +501,8 @@
       "category": "gap_ranking",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 8.6,
-      "wall_latency_ms": 9.4,
+      "reported_latency_ms": 21.3,
+      "wall_latency_ms": 23.6,
       "cost_usd": 0.0,
       "answer": "Over FY26 (Jul 2025 - Jun 2026) the largest shortfall against target is Aqualite in West: INR 1,798,498 short, at 90.9% of plan (INR 18,027,502 against INR 19,826,000)."
     },
@@ -515,8 +515,8 @@
       "category": "gap_ranking",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 10.5,
-      "wall_latency_ms": 11.5,
+      "reported_latency_ms": 20.2,
+      "wall_latency_ms": 22.2,
       "cost_usd": 0.0,
       "answer": "Over Q4 FY26 (Apr 2026 - Jun 2026) the largest shortfall against target is Aqualite in West: INR 1,912,659 short, at 62.0% of plan (INR 3,120,341 against INR 5,033,000). Next: SparkClean in South INR 390,070 short (95.3%); SparkClean in West INR 298,434 short (95.2%); Aloe Vera Glow in West INR 212,"
     },
@@ -529,8 +529,8 @@
       "category": "stockouts",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 14.8,
-      "wall_latency_ms": 15.9,
+      "reported_latency_ms": 31.3,
+      "wall_latency_ms": 33.4,
       "cost_usd": 0.0,
       "answer": "ACPL nationally logged 520 distributor-week stock-outs over FY26 (Jul 2025 - Jun 2026), across 40 distributors and 118 SKUs (1614 days of zero stock in total). The worst is D032 (Mumbai & Sons 1) with 93 days out across 13 SKUs. 2 distributor-SKU pair(s) have run past the six-week chronic threshold."
     },
@@ -543,8 +543,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 18.3,
-      "wall_latency_ms": 19.5,
+      "reported_latency_ms": 46.6,
+      "wall_latency_ms": 48.7,
       "cost_usd": 0.0,
       "answer": "North is ahead of plan over FY26 (Jul 2025 - Jun 2026): INR 375,361,733 against a target of INR 374,775,000, 100.2% of plan and INR 586,733 ahead."
     },
@@ -557,8 +557,8 @@
       "category": "actions",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 48.4,
-      "wall_latency_ms": 52.5,
+      "reported_latency_ms": 169.2,
+      "wall_latency_ms": 182.4,
       "cost_usd": 0.0,
       "answer": "55 action(s) for all over FY26 (Jul 2025 - Jun 2026), 30 of which need a manager's approval before anyone acts. R-01: Expedite replenishment and escalate to the regional supply lead (PENDING_APPROVAL); R-04: Raise a replenishment order for that distributor (PENDING_APPROVAL); R-04: Raise a replenish"
     },
@@ -571,8 +571,8 @@
       "category": "promotions",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 6.3,
-      "wall_latency_ms": 7.4,
+      "reported_latency_ms": 13.9,
+      "wall_latency_ms": 16.5,
       "cost_usd": 0.0,
       "answer": "40 promotion(s) ran for ACPL nationally over FY26 (Jul 2025 - Jun 2026), with a median uplift of 27.4% on weekly sales against the four weeks before each. The strongest was PR-2026-028 (Extra 20% volume on GlucoJoy) at 44.7%."
     },
@@ -585,8 +585,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 25.8,
-      "wall_latency_ms": 26.8,
+      "reported_latency_ms": 205.5,
+      "wall_latency_ms": 207.9,
       "cost_usd": 0.0,
       "answer": "Zing Cola in East is ahead of plan over FY26 (Jul 2025 - Jun 2026): INR 17,967,883 against a target of INR 17,508,000, 102.6% of plan and INR 459,883 ahead."
     },
@@ -599,8 +599,8 @@
       "category": "stockouts",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 13.9,
-      "wall_latency_ms": 15.0,
+      "reported_latency_ms": 43.2,
+      "wall_latency_ms": 45.6,
       "cost_usd": 0.0,
       "answer": "ACPL nationally logged 520 distributor-week stock-outs over FY26 (Jul 2025 - Jun 2026), across 40 distributors and 118 SKUs (1614 days of zero stock in total). The worst is D032 (Mumbai & Sons 1) with 93 days out across 13 SKUs. 2 distributor-SKU pair(s) have run past the six-week chronic threshold."
     },
@@ -613,8 +613,8 @@
       "category": "explain",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 21.5,
-      "wall_latency_ms": 22.5,
+      "reported_latency_ms": 49.3,
+      "wall_latency_ms": 52.0,
       "cost_usd": 0.0,
       "answer": "MintGuard finished Mar 2026 slightly behind plan, at 96.3%. Its SKUs were out of stock for 2 distributor-weeks (8 days of zero stock) in the same window, so supply is a live constraint."
     },
@@ -627,8 +627,8 @@
       "category": "national_total",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 7.1,
-      "wall_latency_ms": 8.1,
+      "reported_latency_ms": 23.7,
+      "wall_latency_ms": 27.5,
       "cost_usd": 0.0,
       "answer": "ACPL nationally recorded primary sales of INR 1,357,631,079 over FY26 (Jul 2025 - Jun 2026), against a target of INR 1,360,880,000 \u2014 99.8% of plan."
     },
@@ -641,8 +641,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 26.0,
-      "wall_latency_ms": 27.0,
+      "reported_latency_ms": 57.0,
+      "wall_latency_ms": 59.3,
       "cost_usd": 0.0,
       "answer": "GlucoJoy is ahead of plan over Dec 2025: INR 10,450,607 against a target of INR 10,385,000, 100.6% of plan and INR 65,607 ahead."
     },
@@ -655,8 +655,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 23.1,
-      "wall_latency_ms": 24.1,
+      "reported_latency_ms": 48.5,
+      "wall_latency_ms": 50.6,
       "cost_usd": 0.0,
       "answer": "CremeDelight is behind plan over FY26 (Jul 2025 - Jun 2026): INR 99,365,525 against a target of INR 100,362,000, 99.0% of plan and INR 996,475 short."
     },
@@ -669,8 +669,8 @@
       "category": "compare",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 15.6,
-      "wall_latency_ms": 16.7,
+      "reported_latency_ms": 34.5,
+      "wall_latency_ms": 36.5,
       "cost_usd": 0.0,
       "answer": "over FY26 (Jul 2025 - Jun 2026), East 100.3% of plan (INR 389,376,247 against INR 388,023,000); West 98.9% of plan (INR 252,148,262 against INR 254,845,000). East is the stronger of the two on achievement."
     },
@@ -683,8 +683,8 @@
       "category": "stockouts",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 14.6,
-      "wall_latency_ms": 15.8,
+      "reported_latency_ms": 27.4,
+      "wall_latency_ms": 29.5,
       "cost_usd": 0.0,
       "answer": "ACPL nationally logged 520 distributor-week stock-outs over FY26 (Jul 2025 - Jun 2026), across 40 distributors and 118 SKUs (1614 days of zero stock in total). The worst is D032 (Mumbai & Sons 1) with 93 days out across 13 SKUs. 2 distributor-SKU pair(s) have run past the six-week chronic threshold."
     },
@@ -697,8 +697,8 @@
       "category": "territory",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 14.2,
-      "wall_latency_ms": 15.6,
+      "reported_latency_ms": 27.9,
+      "wall_latency_ms": 30.0,
       "cost_usd": 0.0,
       "answer": "Ahmedabad in the West region recorded primary sales of INR 80,697,350 over FY26 (Jul 2025 - Jun 2026) across 3 distributors, with 35 distributor-week stock-outs (111 days of zero stock). ACPL sets targets by brand and region, not by territory, so there is no achievement percentage for Ahmedabad \u2014 th"
     },
@@ -711,8 +711,8 @@
       "category": "product_info",
       "router": "rules",
       "answer_source": "computed",
-      "reported_latency_ms": 1.9,
-      "wall_latency_ms": 2.8,
+      "reported_latency_ms": 4.2,
+      "wall_latency_ms": 6.2,
       "cost_usd": 0.0,
       "answer": "GlucoJoy 100g (BS-0102, Biscuits) has an MRP of INR 33."
     },
@@ -725,8 +725,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.6,
-      "wall_latency_ms": 1.3,
+      "reported_latency_ms": 1.3,
+      "wall_latency_ms": 3.6,
       "cost_usd": 0.0,
       "answer": "I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Market share, secondary sales, competitor figures, profitability, "
     },
@@ -739,8 +739,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 0.5,
-      "wall_latency_ms": 1.3,
+      "reported_latency_ms": 1.2,
+      "wall_latency_ms": 3.1,
       "cost_usd": 0.0,
       "answer": "'churned' is not something any ACPL source here measures. I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Market s"
     },
@@ -753,8 +753,8 @@
       "category": "performance",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 1.4,
-      "wall_latency_ms": 2.6,
+      "reported_latency_ms": 1.5,
+      "wall_latency_ms": 3.3,
       "cost_usd": 0.0,
       "answer": "'Parle-G' is not a brand in ACPL's product master, so I have no data for it. The FY26 brands are: Aloe Vera Glow, Aqualite, Chai Mitra, CremeDelight, Crunchos, DishBright, FreshFloor, GlucoJoy, Marigold Marie, MintGuard, Namkeen Nation, PopKing, Silkessa, SparkClean, Zing Cola."
     },
@@ -767,8 +767,8 @@
       "category": "unsupported",
       "router": "rules",
       "answer_source": null,
-      "reported_latency_ms": 1.3,
-      "wall_latency_ms": 2.4,
+      "reported_latency_ms": 2.2,
+      "wall_latency_ms": 4.1,
       "cost_usd": 0.0,
       "answer": "I cannot answer that from what I hold. My sources are ACPL's FY26 primary sales, the monthly target plan, the distributor stock-out log, the trade-promotion calendar, the product/geography/distributor masters and the action playbook. Market share, secondary sales, competitor figures, profitability, "
     },
@@ -785,7 +785,7 @@
         "R-08"
       ],
       "pending": 5,
-      "wall_latency_ms": 18.7
+      "wall_latency_ms": 39.8
     },
     {
       "id": "actions_all",
@@ -800,7 +800,7 @@
         "R-08"
       ],
       "pending": 14,
-      "wall_latency_ms": 28.8
+      "wall_latency_ms": 61.0
     },
     {
       "id": "actions_north",
@@ -813,7 +813,7 @@
         "R-08"
       ],
       "pending": 3,
-      "wall_latency_ms": 6.9
+      "wall_latency_ms": 15.2
     },
     {
       "id": "actions_fy26_all",
@@ -830,7 +830,7 @@
         "R-08"
       ],
       "pending": 30,
-      "wall_latency_ms": 52.0
+      "wall_latency_ms": 117.4
     },
     {
       "id": "actions_unknown_scope",
@@ -840,7 +840,7 @@
       "n_actions": 0,
       "rules": [],
       "pending": 0,
-      "wall_latency_ms": 0.9
+      "wall_latency_ms": 2.0
     },
     {
       "id": "actions_nonsense_scope",
@@ -850,7 +850,7 @@
       "n_actions": 0,
       "rules": [],
       "pending": 0,
-      "wall_latency_ms": 0.7
+      "wall_latency_ms": 1.7
     }
   ],
   "gold": {

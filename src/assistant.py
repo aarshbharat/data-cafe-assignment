@@ -323,14 +323,21 @@ async def route(ds: DataStore, question: str, llm: LLMClient, meter: Meter) -> I
     it.region = it.region or base.region
     it.territory = it.territory or base.territory
     it.regions = it.regions or base.regions
+    if len(it.regions) > 1 and base.category == "compare":
+        # Two regions named: the model returns a single `region`, so without
+        # this its answer would silently cover only one side.
+        it.category = "compare"
     if base.out_of_scope:
         # The screen found a measure ACPL does not hold. The model does not
         # get to overrule that.
         it.category, it.out_of_scope = "unsupported", base.out_of_scope
-    if base.category != "unsupported" and it.category == "unsupported":
-        # The rules found a real category; require the model to be sure.
-        it.category = base.category
-        it.router = "rules+llm"
+    elif it.category == "unsupported" or base.category == "unsupported":
+        # Either reader judging the question out of scope is enough to decline.
+        # Deferring to the rules here would mean the model could never cause a
+        # refusal, so anything its regexes mis-routed would be answered — and
+        # under-refusing is the worse failure.
+        it.category = "unsupported"
+        it.router = "rules+llm" if base.category == "unsupported" else "llm"
     return it
 
 
@@ -697,10 +704,14 @@ async def narrate(finding: Finding, question: str, llm: LLMClient, meter: Meter)
         return finding.answer, "computed"
     payload = (f"Question: {question}\n\nComputed finding: {finding.answer}\n\n"
                f"Evidence: {finding.evidence[:6]}")
-    r = meter.add("narrate", await llm.chat(NARRATOR_SYSTEM, payload, max_tokens=220,
+    r = meter.add("narrate", await llm.chat(NARRATOR_SYSTEM, payload, max_tokens=500,
                                             temperature=0.1))
     if not r.ok or not r.text:
         return finding.answer, "computed (model unavailable)"
+    if not r.text.rstrip().endswith((".", "!", "?", '"', "%", ")")):
+        # Hit the token ceiling mid-sentence. A half-finished answer is worse
+        # than a plain one, and a truncated figure would read as a wrong figure.
+        return finding.answer, "computed (narration rejected: truncated)"
     if not grounded(r.text, finding.answer, finding.evidence):
         return finding.answer, "computed (narration rejected: ungrounded figure)"
     return r.text, "narrated"
@@ -880,6 +891,11 @@ async def answer(ds: DataStore, pre: M.Precomputed, question: str,
                                "sanctioned action to recommend.")
 
     text, how = await narrate(finding, question, llm, meter)
+    # Re-read the meter: `meta` was built after routing, so the narration call's
+    # tokens are not in it yet and the counts would not reconcile with the cost.
+    meta["llm_calls"] = list(meter.calls)
+    meta["llm_tokens"] = {"prompt": meter.prompt_tokens,
+                          "completion": meter.completion_tokens}
     return {
         "answer": text,
         "status": "OK",

@@ -174,6 +174,7 @@ Additive only; the contracted fields are always present and unchanged.
 
 ```bash
 python -m eval.run_eval --repeat 5          # in-process, no port needed
+python -m eval.test_llm_path                # model-success path, stubbed provider
 BASE_URL=https://your-host python -m eval.run_eval   # against a deployment
 ```
 
@@ -182,6 +183,12 @@ from [`eval/gold.py`](eval/gold.py), which re-reads the CSVs and redoes the join
 independently of `src/`, so a case passes only when the service agrees with the
 source files rather than with itself. Results are written to
 [`eval/RESULTS.md`](eval/RESULTS.md) and `eval/results.json`.
+
+`eval/test_llm_path.py` covers the half a keyless run cannot reach: with a stub
+provider that actually replies, it asserts the router merge, that an ungrounded
+or truncated narration is discarded, that either reader can force a refusal, and
+that an injected instruction is refused before any model call is made. 22
+assertions, no network, no spend.
 
 ---
 

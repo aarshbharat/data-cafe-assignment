@@ -18,7 +18,7 @@ cannot support.
 | [src/assistant.py](src/assistant.py) | The `/ask` pipeline: routing, computation, narration, grounding check |
 | [src/llm.py](src/llm.py) | OpenAI-compatible client with real cost and latency metering |
 | [src/prepare.py](src/prepare.py) | One-command data preparation |
-| [eval/](eval/) | [cases.py](eval/cases.py) (the set), [gold.py](eval/gold.py) (independent ground truth), [run_eval.py](eval/run_eval.py) (the harness) |
+| [eval/](eval/) | [cases.py](eval/cases.py) (the set), [gold.py](eval/gold.py) (independent ground truth), [run_eval.py](eval/run_eval.py) (the harness), [test_llm_path.py](eval/test_llm_path.py) (the model-success path, stubbed) |
 
 ---
 
@@ -127,6 +127,8 @@ deterministic one, and `answer_source` records that it happened.
 |---|---|
 | LLM unreachable / 401 / timeout | Rule-based routing, computed answer, `router: "rules"`, `cost_usd: 0.0`. **Not** a refusal. |
 | LLM returns unparseable JSON | Same fallback |
+| Narration truncated at the token ceiling | Discarded; a half-finished figure reads as a wrong figure |
+| Either reader judges the question out of scope | Declined — under-refusing is the worse failure |
 | Narration contains an ungrounded figure | Discarded; computed sentence used; `answer_source` says so |
 | Unknown brand / region / period | `NO_ANSWER` naming the entity and listing valid ones |
 | No data for a valid combination | `NO_ANSWER` |
